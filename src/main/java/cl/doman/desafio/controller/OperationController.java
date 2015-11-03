@@ -66,19 +66,4 @@ public class OperationController {
       return "null";
     }
   }
-
-  // @RequestMapping(value = {"/"}, method = RequestMethod.POST)
-  // @ResponseBody public String index(@RequestBody Operation operation, HttpServletRequest request)
-  // throws IOException {
-  //
-  // StringWriter writer = new StringWriter();
-  // IOUtils.copy(request.getInputStream(), writer);
-  // log.info(writer.toString());
-  //
-  // Double value = operation.calculate();
-  //
-  // return value.toString();
-  // }
-
-
 }

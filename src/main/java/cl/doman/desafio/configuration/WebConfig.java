@@ -13,29 +13,17 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-import cl.doman.desafio.controller.OperationHttpMessageConverter;
 
 
 
 @Configuration
-//@EnableWebMvc
 @ComponentScan(basePackages = "cl.doman.desafio.controller")
 public class WebConfig extends WebMvcConfigurationSupport {
   static Logger log = LoggerFactory.getLogger(WebConfig.class);
 
-  public WebConfig(){
-    //this.con
-  }
-  
   @Override
   public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
     configurer.enable();
   }
-
-//  @Override
-//  public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-//    converters.add(new OperationHttpMessageConverter());
-//    this.addDefaultHttpMessageConverters(converters);
-//  }
 
 }
